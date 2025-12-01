@@ -1,0 +1,41 @@
+import std/[strutils, sequtils]
+import ../lib/utils
+
+
+const DAY = 1  # Change this for each day
+
+
+proc part1_example(input: string): int =
+    # Solve part 1 example
+    
+    0
+
+
+proc part1(input: string): int =
+    # Solve part 1
+    0
+
+
+proc part2_example(input: string): int =
+    # Solve part 2 example
+    0
+
+
+proc part2(input: string): int =
+    # Solve part 2
+    0
+
+
+when isMainModule:
+    solution(DAY):
+        let answer1_example = part1_example(input)
+        echo "Part 1 example: ", answer1_example
+
+        let answer1 = part1(input)
+        echo "Part 1: ", answer1
+
+        let answer2_example = part2_example(input)
+        echo "Part 2 example: ", answer2_example
+
+        let answer2 = part2(input)
+        echo "Part 2: ", answer2

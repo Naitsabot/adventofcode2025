@@ -9,6 +9,14 @@ proc readInput*(day: int): string =
     readFile(path)
 
 
+proc readTest*(day: int): string =
+    ## Read test file for a given day
+    let path = "day" & $day.intToStr(2) & "/test.txt"
+    if not fileExists(path):
+        raise newException(IOError, "Test file not found: " & path)
+    readFile(path)
+
+
 proc readLines*(day: int): seq[string] =
     ## Read input as lines
     readInput(day).strip().splitLines()
@@ -31,5 +39,6 @@ template solution*(day: int, body: untyped) =
     ## Main solution template
     echo "=== Day ", day, " ==="
     let input {.inject.} = readInput(day)
+    let test {.inject.} = readTest(day)
     body
     echo ""

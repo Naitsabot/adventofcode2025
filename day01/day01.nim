@@ -35,7 +35,7 @@ makeTurnProc(turnLeft, false)
 
 
 proc part1(input: string): int =
-    # Solve part 1
+    ## Solve part 1
 
     var dial: Dial = Dial(pos: 50, zerocounter: 0)
 
@@ -54,7 +54,7 @@ proc part1(input: string): int =
 
 
 proc part2(input: string): int =
-    # Solve part 2
+    ## Solve part 2
 
     var dial: Dial = Dial(pos: 50, zerocounter: 0)
 
